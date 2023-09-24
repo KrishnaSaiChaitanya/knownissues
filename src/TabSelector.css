@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&display=swap');
+
+/* Add CSS styles for severity badges */
+.severity {
+    /* font-weight: bold; */
+    padding: 4px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-left: 10px;
+    border-radius: 16px;
+    width: 3.8rem;
+    margin: 5px;
+}
+
+.low {
+    background-color: green;
+    color: white;
+}
+
+.medium {
+    background-color: blue;
+    color: white;
+}
+
+.high {
+    background-color: red;
+    color: white;
+}
+.issueDescription{
+    width: 60%;
+    text-align: start;
+}
+.expectRepairDate{
+    margin: 5px;
+}
+/* Apply hover effect to list items */
+.list-item {
+    transition: background-color 0.3s;
+    /* border-radius: 30px; */
+}
+
+.list-item:hover {
+    background-color: #82188f;
+    border-radius: 30px;
+}
+
+/* Rest of your existing CSS styles */
+.tab-selector {
+    text-align: center;
+}
+
+.tab-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.tab-buttons {
+    display: flex;
+    justify-content: center;
+}
+.tab-heading{
+    font-weight: 800;
+    color: white;
+}
+.tab-button {
+    padding: 12px 20px;
+    margin: 5px;
+    border: none;
+    /* font-weight: 400; */
+    background-color: #661470;
+    cursor: pointer;
+    outline: none;
+    width: 120px;
+    font-weight: bold;
+    border-radius: 60px;
+}
+
+.tab-button.active {
+    background-color: #82188F;
+    color: #fff;
+    font-weight: bold;
+}
+ 
+.tab-content{
+    /* height: 70vh; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 2%;
+    background-color: #54005C;
+}
+
+html{
+    height: 100%;
+}
+
+
+.list-item {
+    /* Remove padding, border, and border-radius */
+    /* padding: 0; */
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+body{
+    background: linear-gradient(46deg, #27002b, #650071);
+    font-family: Plus Jakarta Sans;
+    color: white;
+    /* height: 100vh; */
+}
+@media (max-width: 768px) {
+    .list-item {
+        padding: 12px;
+        border-radius: 0;
+        display:flex;
+        flex-direction: column;
+       
+    }
+    .issueDescription{
+        text-align: center;
+        width: 100%;
+    }
+    .list{
+        padding: 0;
+    }
+}
