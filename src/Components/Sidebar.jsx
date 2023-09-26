@@ -9,7 +9,7 @@ const Sidebar = ({ isOpen, onClose, children }) => {
         style={{
           height: "26px",
           width: "26px",
-          color: "orange",
+          color: "#e30afc",
           margin: "20px",
         }}
         aria-hidden="true"

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import FAQSection from "./FAQSection";
-import Sidebar from "./Sidebar";
+import Sidebar from "./Sidebar.jsx";
 import "./VerticalTabs.css";
 
 const VerticalTabs = () => {
   const [activeTab, setActiveTab] = useState("Section1");
-  const [isSidebarOpen, setSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [faqs, setFaqs] = useState([]);
 
   const handleTabClick = (tab) => {
@@ -13,7 +13,7 @@ const VerticalTabs = () => {
   };
 
   const toggleSidebar = () => {
-    setSidebarOpen(!isSidebarOpen);
+    setIsSidebarOpen(!isSidebarOpen);
   };
 
   useEffect(() => {
@@ -32,6 +32,9 @@ const VerticalTabs = () => {
   return (
     <div className="main">
       <div className="navBar">
+        <h1 className="text-3xl font-bold text-center mb-2 text-gray-100 mt-4 mb-8">
+          FAQ's Section
+        </h1>
         <svg
           className="menu-button"
           onClick={toggleSidebar}
@@ -53,13 +56,10 @@ const VerticalTabs = () => {
             d="M1 1h15M1 7h15M1 13h15"
           />
         </svg>
-        <h1 className="text-3xl font-bold text-center mb-2 text-gray-100 mt-4 mb-8">
-          FAQ's Section
-        </h1>
       </div>
       <div className="vertical-tabs">
         <Sidebar isOpen={isSidebarOpen} onClose={toggleSidebar}>
-          <div className="tab-buttons1">
+          <div className="side-menu-tab-buttons">
             {sectionNames.map((sectionName) => (
               <button
                 key={sectionName}

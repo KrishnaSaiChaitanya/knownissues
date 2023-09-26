@@ -25,7 +25,7 @@ const FAQSection = ({ sectionName, faqs }) => {
                   style={{
                     height: "18px",
                     width: "18px",
-                    color: "orange",
+                    color: "#e30afc",
                     margin: "2px",
                   }}
                   aria-hidden="true"
@@ -46,7 +46,7 @@ const FAQSection = ({ sectionName, faqs }) => {
                   style={{
                     height: "18px",
                     width: "18px",
-                    color: "orange",
+                    color: "#e30afc",
                     margin: "6px",
                   }}
                   aria-hidden="true"

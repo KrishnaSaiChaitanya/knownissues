@@ -1,6 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
-import VerticalTabs from "./VerticalTab";
+import VerticalTabs from "./Components/VerticalTab";
 
 function App() {
   return (
