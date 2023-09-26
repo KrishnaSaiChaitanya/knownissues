@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "question": "What is FAQ?",
+    "answer": "FAQ stands for Frequently Asked Questions. It is a list of commonly asked questions and their answers.",
+    "section": "Section1"
+  },
+  {
+    "id": 2,
+    "question": "How do I use this website?",
+    "answer": "To use this website, simply follow the instructions provided in the user guide.",
+    "section": "Section1"
+  },
+  {
+    "id": 3,
+    "question": "Can I change my password?",
+    "answer": "Yes, you can change your password in the account settings.",
+    "section": "Section2"
+  },
+  {
+    "id": 4,
+    "question": "What are the payment options?",
+    "answer": "We accept credit/debit cards and PayPal for payment.",
+    "section": "Section2"
+  },
+  {
+    "id": 5,
+    "question": "Do you offer refunds?",
+    "answer": "Refunds are available for eligible purchases within 30 days of the purchase date.",
+    "section": "Section3"
+  },
+  {
+    "id": 6,
+    "question": "How can I contact customer support?",
+    "answer": "You can contact our customer support team by email or phone.",
+    "section": "Section3"
+  },
+  {
+    "id": 7,
+    "question": "Is my personal information secure?",
+    "answer": "Yes, we take security measures to protect your personal information.",
+    "section": "Section4"
+  },
+  {
+    "id": 8,
+    "question": "What is your privacy policy?",
+    "answer": "Our privacy policy outlines how we handle your personal data.",
+    "section": "Section4"
+  }
+]

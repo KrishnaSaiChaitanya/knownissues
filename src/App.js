@@ -1,11 +1,12 @@
 import logo from "./logo.svg";
 import "./App.css";
-import TabSelector from "./TabSelector";
+import VerticalTabs from "./VerticalTab";
 
 function App() {
   return (
     <div className="App" style={{ height: "100%" }}>
-      <TabSelector />
+      {/* <AAppAFunction /> */}
+      <VerticalTabs />
     </div>
   );
 }
