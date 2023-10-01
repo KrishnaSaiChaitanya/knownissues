@@ -1,16 +1,8 @@
 import React, { useState, useEffect } from "react";
 import "./TextAnimation.css";
-import BackgrounAnimation from "./BackgrounAnimation";
-import TextSlider from "./TextSlider";
 
 const AnimatedText = ({ text }) => {
   const [animationKey, setAnimationKey] = useState(0);
-  const texts = [
-    "Text 1",
-    "Text 2",
-    "Text 3",
-    // Add more texts as needed
-  ];
   useEffect(() => {
     setAnimationKey((prevKey) => prevKey + 1);
   }, [text]);
@@ -25,7 +17,7 @@ const AnimatedText = ({ text }) => {
             key={index}
             className="animated-text"
             style={{
-              animation: `fade-in 0.9s ${
+              animation: `fade-in 0.7s ${
                 0.2 * index
               }s forwards cubic-bezier(0.11, 0, 0.5, 0)`,
             }}

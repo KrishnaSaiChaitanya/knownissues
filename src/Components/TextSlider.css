@@ -3,8 +3,11 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  height: 100%;
 }
-
+.text-slider > p {
+  min-height: 250px;
+}
 .text-container {
   flex: 1;
   text-align: center;

@@ -18,7 +18,7 @@ const TextSlider = ({ texts }) => {
 
   return (
     <div className="text-slider">
-      <p style={{ width: "60%", height: "200px" }}>
+      <p style={{ width: "60%" }}>
         <AnimatedText text={texts[currentIndex]} />
       </p>
       <div
