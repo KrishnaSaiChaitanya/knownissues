@@ -4,7 +4,6 @@ import TextSlider from "./Components/TextSlider";
 
 function App() {
   const texts = [
-    "My name is chaitanya",
     "A big welcome and thank you for joining our community!",
     "We created this app to help others (and, ourselves), lead happier, healthier, more fulfilling lives.",
     "Within this app — and, based on your membership level — you'll find a varying degree of semi-interactive and fully interactive features centered around getting more from life.",

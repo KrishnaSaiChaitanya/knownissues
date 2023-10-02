@@ -18,7 +18,7 @@ const TextSlider = ({ texts }) => {
 
   return (
     <div className="text-slider">
-      <p style={{ width: "60%" }}>
+      <p>
         <AnimatedText text={texts[currentIndex]} />
       </p>
       <div
@@ -29,12 +29,49 @@ const TextSlider = ({ texts }) => {
           width: "90%",
         }}
       >
-        <button className="slider-button" onClick={handlePrev}>
-          Previous
-        </button>
-        <button className="slider-button" onClick={handleNext}>
-          Next
-        </button>
+        {currentIndex === 0 ? (
+          <div className="wrap">
+            <button
+              className="button"
+              id="animated-button"
+              onClick={handleNext}
+            >
+              <svg
+                style={{ height: "24px", color: "white" }}
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 16 18"
+              >
+                <path
+                  stroke="currentColor"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M1 1.984v14.032a1 1 0 0 0 1.506.845l12.006-7.016a.974.974 0 0 0 0-1.69L2.506 1.139A1 1 0 0 0 1 1.984Z"
+                />
+              </svg>
+            </button>
+            <h3
+              style={{
+                fontSize: "22px",
+                color: "white",
+                textAlign: "center",
+              }}
+            >
+              Start
+            </h3>
+          </div>
+        ) : (
+          <>
+            <button className="slider-button" onClick={handlePrev}>
+              Previous
+            </button>
+            <button className="slider-button" onClick={handleNext}>
+              Next
+            </button>{" "}
+          </>
+        )}
       </div>
     </div>
   );
