@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import TextSlider from "./Components/TextSlider";
+import Home from "./Components/Home";
 
 function App() {
   const texts = [

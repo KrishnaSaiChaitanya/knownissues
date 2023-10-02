@@ -7,7 +7,7 @@
   z-index: 100;
 }
 .text-slider > p {
-  min-height: 250px;
+  height: 250px;
   width: 80%;
   display: flex;
   align-items: center;
@@ -119,8 +119,8 @@ button:focus::after {
 
 @keyframes ring {
   0% {
-    width: 30px;
-    height: 30px;
+    width: 60px;
+    height: 60px;
     opacity: 1;
   }
   100% {

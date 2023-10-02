@@ -1,7 +1,9 @@
 .animated-text-main {
-  font-size: 18px;
+  font-size: 22px;
   line-height: 1.5;
+  /* height: 250px; */
   text-align: center;
+  display: contents;
   padding: 10%;
   transform: scale(0.94);
   animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
