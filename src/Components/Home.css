@@ -2,4 +2,10 @@
   #hero-image {
     width: 90% !important;
   }
+  #middle-text {
+    max-width: 100% !important;
+  }
+  #faq-text {
+    max-width: 80%;
+  }
 }

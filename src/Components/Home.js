@@ -107,6 +107,7 @@ function Home() {
           <div className="flex justify-center">
             <p
               class="text-center font-normal text-white "
+              id="middle-text"
               style={{ maxWidth: "50%" }}
             >
               Life is a journey of experiences, choices, and beliefs about
@@ -585,7 +586,7 @@ function Home() {
             </p>
           </div>
 
-          <div class="flex justify-center mt-10">
+          {/* <div class="flex justify-center mt-10">
             <div class="inline-block border p-2 rounded-full bg-gray-500/10">
               <div class="flex items-center gap-5">
                 <button class="py-2 px-4  text-base font-normal rounded-full text-white bg-blue-600">
@@ -596,17 +597,19 @@ function Home() {
                 </button>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div class="grid lg:grid-cols-2 grid-cols-1 gap-16 items-center mt-16">
             <div>
               <div class="p-10 rounded-md shadow-lg relative">
                 <div class="p-7 rounded-md text-center bg-gray-50">
-                  <h5 class="text-lg font-medium">Free</h5>
+                  <h5 class="text-lg font-medium pb-2">
+                    GLOW by ambience.LIFE
+                  </h5>
                   <h1 class="text-4xl font-semibold text-[#671277]">
-                    $0.00
+                    $22.00
                     <span class="text-base font-normal text-gray-500">
-                      /Month
+                      /Yearly
                     </span>
                   </h1>
                 </div>
@@ -614,37 +617,35 @@ function Home() {
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      <span class="font-bold text-gray-800">3</span> Projects
+                      Seeds (easy empowering phrase game)
                     </p>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      <span class="font-bold text-gray-800">580GB</span> Storage
+                      Typer (semi-easy empowering phrase game)
                     </p>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      <span class="font-bold text-gray-800">Unlimited</span>{" "}
-                      Contacts
+                      Cards (moderate empowering phrase game)
                     </p>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      <span class="font-bold text-gray-800">5</span> Domains
+                      Scramble (challenging empowering phrase game)
                     </p>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      Free Support{" "}
-                      <span class="font-bold text-gray-800">24/7</span>
+                      ... and, more features coming soon!
                     </p>
                   </div>
                 </div>
@@ -669,9 +670,9 @@ function Home() {
                 <div class="p-7 rounded-md text-center bg-gray-50">
                   <h5 class="text-lg font-medium">Standard</h5>
                   <h1 class="text-4xl font-semibold text-[#671277]">
-                    $29.00
+                    $44.00
                     <span class="text-base font-normal text-gray-500">
-                      /Month
+                      /Lifetime
                     </span>
                   </h1>
                 </div>
@@ -679,37 +680,35 @@ function Home() {
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      <span class="font-bold text-gray-800">10</span> Projects
+                      Seeds (easy empowering phrase game)
                     </p>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      <span class="font-bold text-gray-800">1TB</span> Storage
+                      Typer (semi-easy empowering phrase game)
                     </p>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      <span class="font-bold text-gray-800">Unlimited</span>{" "}
-                      Contacts
+                      Cards (moderate empowering phrase game)
                     </p>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      <span class="font-bold text-gray-800">12</span> Domains
+                      Scramble (challenging empowering phrase game)
                     </p>
                   </div>
 
                   <div class="flex items-center gap-2">
                     <i class="mdi mdi-check text-lg text-gray-500"></i>
                     <p class="text-base font-normal text-gray-500">
-                      Free Support{" "}
-                      <span class="font-bold text-gray-800">24/7</span>
+                      ... and, more features coming soon!
                     </p>
                   </div>
                 </div>
@@ -743,8 +742,8 @@ function Home() {
             </p>
           </div>
           <div className="flex justify-center py-5">
-            <div style={{ width: "80%" }}>
-              <div data-fc-type="accordion" className="space-y-4">
+            <div id="faq-text" style={{ width: "80%" }}>
+              <div data-fc-type="accordion" id="faq-text" className="space-y-4">
                 <div>
                   <button
                     className="fc-collapse-open:bg-gray-200 bg-white rounded fc-collapse-open:rounded-b-none text-base px-5 py-3 inline-flex items-center gap-x-3 w-full font-medium text-left text-gray-800 transition hover:text-gray-500"
