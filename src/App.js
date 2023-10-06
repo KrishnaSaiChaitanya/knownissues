@@ -18,8 +18,8 @@ function App() {
       {/* <AAppAFunction /> */}
       {/* <VerticalTabs /> */}
       {/* <AnimatedText text={textToAnimate} /> */}
-      <TextSlider texts={texts} />
-      {/* <Home /> */}
+      {/* <TextSlider texts={texts} /> */}
+      <Home />
     </div>
   );
 }
