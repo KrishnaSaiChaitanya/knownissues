@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import "./Home.css";
 function Home() {
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+
+      // You can adjust these values as needed for the desired effect
+      const minScale = 1;
+      const maxScale = 1.2;
+
+      const newScale =
+        minScale + (maxScale - minScale) * (scrollPosition / 1000);
+      setScale(newScale);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div className="">
       <section
@@ -28,18 +49,21 @@ function Home() {
             </div>
           </div>
         </div>
-
-        <div className="absolute bottom-0">
-          <img src="./hero-bottom-shape.png" alt="" className="w-full" />
-        </div>
       </section>
       <div className="mb-5">
         <img
           id="hero-image"
-          src="./home.png"
-          class="mx-auto"
+          src="./hero.svg"
+          className="mx-auto"
           alt=""
-          style={{ border: "30px", width: "70%" }}
+          style={{
+            border: "30px",
+            width: "50%",
+            marginBottom: "5%",
+            transform: `scale(${scale})`,
+            transition: "transform 0.2s",
+            zIndex: "100",
+          }}
         />
       </div>
 
@@ -94,8 +118,17 @@ function Home() {
         </div>
       </section> */}
 
-      <section class="py-24 bg-[#54005C]">
-        <div class="container " style={{ maxWidth: "100%", padding: "20px" }}>
+      <section
+        class="bg-[#54005C]"
+        style={{ border: "1px solid white", position: "relative", top: "-10%" }}
+      >
+        <div className="" style={{ position: "initial", marginTop: "-6%" }}>
+          <img src="./banner-shape.svg" />
+        </div>
+        <div
+          class="container py-5 bg-[#54005C]"
+          style={{ maxWidth: "100%", padding: "20px" }}
+        >
           <div class="text-center  mx-auto">
             <h6 class="font-normal uppercase mb-2 text-white">
               How it <span class="font-semibold">Work</span>
@@ -573,7 +606,7 @@ function Home() {
         </div>
       </section> */}
 
-      <section id="pricing" class="py-20 flex justify-center">
+      {/* <section id="pricing" class="py-20 flex justify-center">
         <div class="container">
           <div class="text-center max-w-xl mx-auto">
             <h6 class="font-normal uppercase mb-2">
@@ -586,19 +619,7 @@ function Home() {
             </p>
           </div>
 
-          {/* <div class="flex justify-center mt-10">
-            <div class="inline-block border p-2 rounded-full bg-gray-500/10">
-              <div class="flex items-center gap-5">
-                <button class="py-2 px-4  text-base font-normal rounded-full text-white bg-blue-600">
-                  Monthly
-                </button>
-                <button class="py-2 px-4  text-base font-normal rounded-full  bg-transparent">
-                  Yearly
-                </button>
-              </div>
-            </div>
-          </div> */}
-
+          
           <div class="grid lg:grid-cols-2 grid-cols-1 gap-16 items-center mt-16">
             <div>
               <div class="p-10 rounded-md shadow-lg relative">
@@ -725,9 +746,9 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
-      <section className="p-5 py-10 bg-gray-50 flex justify-center">
+      {/* <section className="p-5 py-10 bg-gray-50 flex justify-center">
         <div className="container ">
           <div className="text-center max-w-xl mx-auto">
             <h6 className="font-normal uppercase mb-2">
@@ -743,7 +764,12 @@ function Home() {
           </div>
           <div className="flex justify-center py-5">
             <div id="faq-text" style={{ width: "80%" }}>
-              <div data-fc-type="accordion" id="faq-text" className="space-y-4">
+              <div
+                data-fc-type="accordion"
+                id="faq-text"
+                className="space-y-4"
+                style={{ maxWidth: "100%" }}
+              >
                 <div>
                   <button
                     className="fc-collapse-open:bg-gray-200 bg-white rounded fc-collapse-open:rounded-b-none text-base px-5 py-3 inline-flex items-center gap-x-3 w-full font-medium text-left text-gray-800 transition hover:text-gray-500"
@@ -853,7 +879,7 @@ function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

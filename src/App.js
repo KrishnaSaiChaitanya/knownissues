@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import TextSlider from "./Components/TextSlider";
 import Home from "./Components/Home";
+import BackgrounAnimation from "./Components/BackgrounAnimation";
 
 function App() {
   const texts = [
@@ -19,7 +20,9 @@ function App() {
       {/* <VerticalTabs /> */}
       {/* <AnimatedText text={textToAnimate} /> */}
       {/* <TextSlider texts={texts} /> */}
-      <Home />
+      <BackgrounAnimation>
+        <Home />
+      </BackgrounAnimation>
     </div>
   );
 }
