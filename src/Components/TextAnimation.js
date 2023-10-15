@@ -17,7 +17,7 @@ const AnimatedText = ({ text }) => {
             key={index}
             className="animated-text"
             style={{
-              animation: `fade-in 0.7s ${
+              animation: `fade-in 0.9s ${
                 0.2 * index
               }s forwards cubic-bezier(0.11, 0, 0.5, 0)`,
             }}

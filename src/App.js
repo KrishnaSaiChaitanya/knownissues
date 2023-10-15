@@ -20,9 +20,8 @@ function App() {
       {/* <VerticalTabs /> */}
       {/* <AnimatedText text={textToAnimate} /> */}
       {/* <TextSlider texts={texts} /> */}
-      <BackgrounAnimation>
-        <Home />
-      </BackgrounAnimation>
+
+      <Home />
     </div>
   );
 }
