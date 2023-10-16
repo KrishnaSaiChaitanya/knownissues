@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./TextAnimation.css";
+import "./HeroTextAnimation.css";
 
 const AnimatedText = ({ text }) => {
   const [animationKey, setAnimationKey] = useState(0);
@@ -10,15 +10,15 @@ const AnimatedText = ({ text }) => {
   const words = text.split(" ");
 
   return (
-    <div className="text-holder">
+    <div className="text-holder" style={{ width: "100%" }}>
       <p className="animated-text-main" key={animationKey}>
         {words.map((word, index) => (
           <span
             key={index}
-            className="animated-text"
+            id="animated-text"
             style={{
-              animation: `fade-in 0.9s ${
-                0.2 * index
+              animation: `fade-in 0.8s ${
+                0.3 * index
               }s forwards cubic-bezier(0.11, 0, 0.5, 0)`,
             }}
           >

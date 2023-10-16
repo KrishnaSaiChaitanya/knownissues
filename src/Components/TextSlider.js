@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./TextSlider.css"; // Import the CSS file for styling
-import AnimatedText from "./TextAnimation";
+import AnimatedText from "./HeroTextAnimation";
 
 const TextSlider = ({ texts }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
