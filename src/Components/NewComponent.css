@@ -1,0 +1,177 @@
+:root {
+  /* Define the base font size (16px) */
+  --base-font-size: 16px;
+}
+
+/* Global Variables */
+:root {
+  --color1: #ededed;
+  --color2: #64c1cf;
+  --color3: #b1c3c1;
+  --color4: #bd9ac8;
+  --color5: #6d87b5;
+  --color6: #00acb5;
+  --color7: #dbd3b1;
+  --color8: #ffffff;
+  --color9: #edf2f2;
+  --color10: #4d5972;
+}
+
+/* Reset Default Settings */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Figure */
+.figure:nth-of-type(2) {
+  margin-left: 2.188rem; /* Converted from 35px to rem */
+  margin-top: 4.375rem; /* Converted from 70px to rem */
+}
+
+/* Path */
+.figure__path {
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.figure__pathStart {
+  width: 1.375rem; /* Converted from 22px to rem */
+  height: 1.375rem; /* Converted from 22px to rem */
+  border: 0.25rem solid var(--color1);
+  outline: 0.21875rem solid;
+  border-radius: 50%;
+  position: relative;
+}
+
+.figure__pathPoint {
+  background-color: var(--color10);
+  width: 0.5625rem; /* Converted from 9px to rem */
+  height: 0.5625rem; /* Converted from 9px to rem */
+  margin-top: 1rem; /* Converted from 16px to rem */
+  border-radius: 50%;
+}
+
+.figure__pathPoint:last-of-type {
+  margin-bottom: 1rem; /* Converted from 16px to rem */
+}
+
+.figure__path:last-of-type .figure__pathPoint {
+  display: none;
+}
+
+/* Product */
+.figure__product {
+  width: 21.875rem; /* Converted from 350px to rem */
+  height: 9.375rem; /* Converted from 150px to rem */
+  padding: 0 1.25rem; /* Converted from 20px to rem */
+  border-radius: 62.5rem; /* Converted from 1000px to rem */
+
+  /* Position */
+  position: absolute;
+  right: 3.125rem; /* Converted from 50px to rem */
+  top: 50%;
+  transform: translateY(-50%);
+
+  /* Flex */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.figure__product::before {
+  width: 0;
+  height: 0;
+  border: 0.9375rem solid;
+  border-color: transparent transparent transparent var(--color2);
+
+  content: "";
+  position: absolute;
+  right: calc(-2 * 0.9375rem + 0.125rem);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.figure__path:nth-of-type(2) .figure__product::before {
+  border-color: transparent transparent transparent var(--color3);
+}
+
+.figure__path:nth-of-type(3) .figure__product::before {
+  border-color: transparent transparent transparent var(--color4);
+}
+
+/* Product - Right */
+.figure__product--right {
+  left: 3.125rem; /* Converted from 50px to rem */
+  flex-direction: row-reverse;
+}
+
+.figure__product--right::before {
+  border-color: transparent var(--color5) transparent transparent;
+  left: calc(-2 * 0.9375rem + 0.125rem);
+}
+
+.figure__path:nth-of-type(2) .figure__product--right::before {
+  border-color: transparent var(--color6) transparent transparent;
+}
+
+.figure__path:nth-of-type(3) .figure__product--right::before {
+  border-color: transparent var(--color7) transparent transparent;
+}
+
+.figure__productContent {
+  padding: 0.625rem 0; /* Converted from 10px to rem */
+
+  /* Flex */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.figure__productName {
+  color: var(--color8);
+  margin-bottom: 0.3125rem; /* Converted from 5px to rem */
+  font-size: 1.375rem; /* Converted from 22px to rem */
+  font-weight: 500;
+}
+
+.figure__productDesc {
+  color: var(--color8);
+  max-width: 8.75rem; /* Converted from 140px to rem */
+  font-size: 0.625rem; /* Converted from 10px to rem */
+  font-weight: 400;
+}
+
+.figure__productIconBox {
+  background-color: var(--color9);
+  width: 5.9375rem; /* Converted from 95px to rem */
+  height: 5.9375rem; /* Converted from 95px to rem */
+  padding: 0.9375rem; /* Converted from 15px to rem */
+  border-radius: 50%;
+  box-shadow: 0.9375rem 1.21875rem 2.4375rem -0.3125rem rgba(50, 50, 93, 0.25),
+    0.9375rem 0.625rem 1.25rem -0.625rem rgba(0, 0, 0, 0.3);
+
+  /* Flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.figure__product--right .figure__productIconBox {
+  box-shadow: -0.9375rem 1.21875rem 2.4375rem -0.3125rem rgba(50, 50, 93, 0.25),
+    -0.9375rem 0.625rem 1.25rem -0.625rem rgba(0, 0, 0, 0.3);
+}
+
+.figure__productIcon {
+  width: 3.75rem; /* Converted from 60px to rem */
+  height: 3.75rem; /* Converted from 60px to rem */
+}

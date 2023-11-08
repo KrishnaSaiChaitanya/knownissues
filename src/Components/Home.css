@@ -2,65 +2,27 @@
   #hero-image {
     width: 90% !important;
   }
-  #middle-text {
-    max-width: 100% !important;
-  }
-  #faq-text {
-    max-width: 80%;
-  }
-}
-
-.custom-shape-divider-top-1697218879 {
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-top-1697218879 svg {
-  position: relative;
-  display: block;
-  width: calc(171% + 1.3px);
-  height: 120px;
 }
 
 .custom-shape-divider-top-1697218879 .shape-fill {
   fill: #600069;
 }
 
-h1 {
-  margin: 0;
-  letter-spacing: -1px;
-  font-size: var(--headingSize);
-}
-
 .container {
   width: 50%;
-}
-
-span {
-  display: inline-block;
-  overflow: hidden;
-  animation: 0.3s swift-up ease-in-out forwards;
 }
 
 i {
   font-style: normal;
   position: relative;
   top: var(--headingSize);
-  animation: 0.5s swift-up ease-in-out forwards;
-}
-
-@keyframes swift-up {
-  to {
-    top: 0;
-  }
 }
 
 @media screen and (max-width: 1000px) {
-  .container {
+  /* .container {
     width: auto;
-    margin: 0 10%;
-  }
+    margin: 0 8%;
+  } */
 
   :root {
     --headingSize: 35px;

@@ -3,6 +3,10 @@ import "./App.css";
 import TextSlider from "./Components/TextSlider";
 import Home from "./Components/Home";
 import BackgrounAnimation from "./Components/BackgrounAnimation";
+import Features from "./Components/Features";
+
+import FeaturesSection from "./Components/featuresSection";
+import NewComponent from "./Components/TakeControl";
 
 function App() {
   const texts = [
@@ -20,8 +24,10 @@ function App() {
       {/* <VerticalTabs /> */}
       {/* <AnimatedText text={textToAnimate} /> */}
       {/* <TextSlider texts={texts} /> */}
-
-      <Home />
+      {/* <Features /> */}
+      <NewComponent />
+      {/* <FeaturesSection /> */}
+      {/* <Home /> */}
     </div>
   );
 }
