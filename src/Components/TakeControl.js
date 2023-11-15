@@ -4,7 +4,7 @@ import "./NewComponent.css";
 function TakeControl() {
   return (
     <div>
-      {/* <div
+      <div
         class="grid lg:grid-cols-12 md:grid-cols-12 grid-cols-1 m-auto mt-10  items-center"
         style={{ width: "80%" }}
       >
@@ -33,7 +33,7 @@ function TakeControl() {
                 </svg>
               </div>
               <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
-                <h4 class="mb-0 text-lg font-medium">Use On Any Device</h4>
+                <h4 class="mb-0 text-lg font-medium">Feature 1</h4>
                 <p class="text-slate-400 mt-3">
                   One disadvantage of Lorum Ipsum is that in Latin frequently
                   than others
@@ -61,7 +61,7 @@ function TakeControl() {
                 </svg>
               </div>
               <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
-                <h4 class="mb-0 text-lg font-medium">Feather Icons</h4>
+                <h4 class="mb-0 text-lg font-medium">Feature 2</h4>
                 <p class="text-slate-400 mt-3">
                   One disadvantage of Lorum Ipsum is that in Latin frequently
                   than others
@@ -88,7 +88,7 @@ function TakeControl() {
                 </svg>
               </div>
               <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
-                <h4 class="mb-0 text-lg font-medium">Retina Ready</h4>
+                <h4 class="mb-0 text-lg font-medium">Feature 3</h4>
                 <p class="text-slate-400 mt-3">
                   One disadvantage of Lorum Ipsum is that in Latin frequently
                   than others
@@ -127,7 +127,7 @@ function TakeControl() {
                 </svg>
               </div>
               <div class="flex-1 ms-4">
-                <h4 class="mb-0 text-lg font-medium">W3c Valid Code</h4>
+                <h4 class="mb-0 text-lg font-medium">Feature 1</h4>
                 <p class="text-slate-400 mt-3">
                   One disadvantage of Lorum Ipsum is that in Latin frequently
                   than others
@@ -154,7 +154,7 @@ function TakeControl() {
                 </svg>
               </div>
               <div class="flex-1 ms-4">
-                <h4 class="mb-0 text-lg font-medium">Fully Responsive</h4>
+                <h4 class="mb-0 text-lg font-medium">Feature 2</h4>
                 <p class="text-slate-400 mt-3">
                   One disadvantage of Lorum Ipsum is that in Latin frequently
                   than others
@@ -180,7 +180,7 @@ function TakeControl() {
                 </svg>
               </div>
               <div class="flex-1 ms-4">
-                <h4 class="mb-0 text-lg font-medium">Browser Compatibility</h4>
+                <h4 class="mb-0 text-lg font-medium">Feature 3</h4>
                 <p class="text-slate-400 mt-3">
                   One disadvantage of Lorum Ipsum is that in Latin frequently
                   than others
@@ -189,8 +189,8 @@ function TakeControl() {
             </div>
           </div>
         </div>
-      </div> */}
-      <div
+      </div>
+      {/* <div
         className="bg-[#75007F] text-white"
         style={{ height: "", display: "flex", flexDirection: "column" }}
       >
@@ -255,7 +255,7 @@ function TakeControl() {
           className="rotate-180"
           style={{ width: "100%" }}
         />
-      </div>
+      </div> */}
     </div>
   );
 }

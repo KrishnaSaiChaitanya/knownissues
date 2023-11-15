@@ -7,6 +7,7 @@ import Features from "./Components/Features";
 
 import FeaturesSection from "./Components/featuresSection";
 import NewComponent from "./Components/TakeControl";
+import SectionComponent from "./Components/SectionComponent";
 
 function App() {
   const texts = [
@@ -26,6 +27,7 @@ function App() {
       {/* <TextSlider texts={texts} /> */}
       {/* <Features /> */}
       <NewComponent />
+      <SectionComponent />
       {/* <FeaturesSection /> */}
       {/* <Home /> */}
     </div>

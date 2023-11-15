@@ -1,0 +1,20 @@
+.task-control {
+  width: 1240px;
+  height: 475px;
+  /* flex-shrink: 0; */
+  border-radius: 20px;
+  /* background: #024751; */
+  margin: auto;
+  align-items: center;
+  background-image: url("../../public/mask.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.task-control-text {
+  text-align: center;
+  margin: auto;
+}
+#task {
+  background-image: url("../../public/mask.svg");
+  background-size: cover;
+}
