@@ -34,7 +34,7 @@ function TakeControl() {
               </div>
               <div class="flex-1 md:order-1 order-2 md:text-end md:me-4 md:ms-0 ms-4">
                 <h4 class="mb-0 text-lg font-medium">Feature 1</h4>
-                <p class="text-slate-400 mt-3">
+                <p class="text-slate-400 mt-3 sm:text-sm">
                   One disadvantage of Lorum Ipsum is that in Latin frequently
                   than others
                 </p>
@@ -99,7 +99,11 @@ function TakeControl() {
         </div>
 
         <div class="lg:col-span-4 md:col-span-12 lg:mx-8 lg:order-2 order-1">
-          <img src="./mobile.svg" class="mx-auto md:max-w-[300px]" alt="" />
+          <img
+            src="./mobile.svg"
+            class="mx-auto md:max-w-[300px] max-w-[200px] mb-4"
+            alt=""
+          />
         </div>
 
         <div
