@@ -29,6 +29,11 @@ function SectionComponent() {
             </button>
           </div>
         </div>
+        <div class="ripple-1"></div>
+        <div class="ripple-2"></div>
+        <div class="ripple-3"></div>
+        <div class="ripple-4"></div>
+        <div class="ripple-5"></div>
       </div>
     </div>
   );
