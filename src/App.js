@@ -6,8 +6,7 @@ import BackgrounAnimation from "./Components/BackgrounAnimation";
 import Features from "./Components/Features";
 
 import FeaturesSection from "./Components/featuresSection";
-import NewComponent from "./Components/TakeControl";
-import SectionComponent from "./Components/SectionComponent";
+import SectionComponent from "./Components/TakeControl";
 
 function App() {
   const texts = [
@@ -26,7 +25,7 @@ function App() {
       {/* <AnimatedText text={textToAnimate} /> */}
       {/* <TextSlider texts={texts} /> */}
       {/* <Features /> */}
-      <NewComponent />
+      {/* <NewComponent /> */}
       <SectionComponent />
       {/* <FeaturesSection /> */}
       {/* <Home /> */}

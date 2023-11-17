@@ -1,22 +1,7 @@
-.task-control {
-  width: 1240px;
-  height: 475px;
-  border-radius: 20px;
-  margin: auto;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  background-image: url("../../public/mask.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.task-control-text {
-  text-align: center;
-  margin: auto;
-}
 #task {
   background-image: url("../../public/mask.svg");
-  background-size: cover;
+  border-radius: 30px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 .ripple-1,
 .ripple-2,
@@ -27,7 +12,7 @@
   width: 1px;
   position: absolute;
   left: 50%;
-  bottom: 90%;
+  bottom: 95%;
   max-width: 100%;
   background-color: #fff;
   border-radius: 50%;
@@ -69,7 +54,7 @@
     opacity: 0.33;
   }
   100% {
-    transform: translate3d(-50%, 50%, 0) scale(380);
+    transform: translate3d(-50%, 50%, 0) scale(360);
     opacity: 0;
   }
 }
