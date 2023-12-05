@@ -9,13 +9,24 @@
     margin: auto;
     margin-top: 30px;
   }
+
   ul.slides {
     height: 400px !important;
     list-style: none;
-    border-radius: 30px;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 30px !important;
+  }
+  #slider_side_content {
+    padding: 5px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 0px !important;
   }
 }
-
+#slider_side_content {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  /* border-bottom-left-radius: 30px; */
+}
 ul.slides {
   display: block;
   position: relative;
