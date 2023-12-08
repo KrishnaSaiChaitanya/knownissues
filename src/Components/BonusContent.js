@@ -5,7 +5,7 @@ function BonusContent() {
   return (
     <div className="bg-[#C046CF]">
       <div className="main bg-[#C046CF] ">
-        <div className="grid md:grid-cols-2 sm:grid-cols-1 md:m-4 sm:m-0 bg-[#C046CF] py-5">
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 md:m-4 sm:m-0 bg-[#C046CF] py-20">
           <div className="col-6">
             <div class="carousel">
               <ul class="slides">
@@ -72,9 +72,7 @@ function BonusContent() {
             </div>
           </div>
           <div className="col-6 bg-[white]" id="slider_side_content">
-            <h1 className="text-left px-2 pt-3 font-bold text-gray-1000">
-              Unwind & Engage
-            </h1>
+            <h1 className="text-left px-2 pt-3">Unwind & Engage</h1>
             <div class="p-5 pt-2">
               <div class="flex items-left gap-5 mt-5 text-left">
                 <div>
