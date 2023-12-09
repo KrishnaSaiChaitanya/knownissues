@@ -1,0 +1,44 @@
+.feature .feature-item .icon {
+  margin-bottom: 15px;
+}
+
+.feature .feature-item .icon i {
+  font-size: 48px;
+  color: #7d71d3;
+}
+
+.feature .feature-item .content h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.feature .feature-item:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .feature .feature-item {
+    margin-bottom: 60px;
+  }
+}
+
+.feature .app-screen {
+  margin: 20px 0;
+}
+
+.feature .app-screen img {
+  max-height: 400px;
+}
+.bg-elipse {
+  background: url(https://themewagon.github.io/lifetrakr/images/backgrounds/elipse-bg-three.png)
+    no-repeat;
+  background-position: center;
+}
