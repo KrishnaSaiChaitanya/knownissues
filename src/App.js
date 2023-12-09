@@ -9,6 +9,7 @@ import FeaturesSection from "./Components/featuresSection";
 import SectionComponent from "./Components/TakeControl";
 import BonusContent from "./Components/BonusContent";
 import NewBonus from "./Components/NewBonus";
+import Slider from "./Components/Slider";
 
 function App() {
   const texts = [
@@ -30,7 +31,8 @@ function App() {
       {/* <NewComponent /> */}
       {/* <SectionComponent /> */}
       {/* <BonusContent /> */}
-      <NewBonus />
+      <Slider />
+      {/* <NewBonus /> */}
       {/* <FeaturesSection /> */}
       {/* <Home /> */}
     </div>

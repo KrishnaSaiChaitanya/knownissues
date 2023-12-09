@@ -14,16 +14,16 @@ function BonusContent() {
                   <div class="slide-image">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/9e/Timisoara_-_Regional_Business_Centre.jpg" />
                   </div>
-                  <div class="carousel-controls">
+                  {/* <div class="carousel-controls">
                     <label for="img-3" class="prev-slide">
                       <span>&lsaquo;</span>
                     </label>
                     <label for="img-2" class="next-slide">
                       <span>&rsaquo;</span>
                     </label>
-                  </div>
+                  </div> */}
                 </li>
-                <input type="radio" name="radio-buttons" id="img-2" />
+                {/* <input type="radio" name="radio-buttons" id="img-2" />
                 <li class="slide-container">
                   <div class="slide-image">
                     <img src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true" />
@@ -50,7 +50,7 @@ function BonusContent() {
                       <span>&rsaquo;</span>
                     </label>
                   </div>
-                </li>
+                </li> */}
                 <div class="carousel-dots">
                   <label
                     for="img-1"
