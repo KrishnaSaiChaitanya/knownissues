@@ -40,7 +40,8 @@ img {
 
 @media (max-width: 768px) {
   .track {
-    height: clamp(300px, 40vmin, 65rem) !important;
+    height: clamp(360px, 40vmin, 65rem) !important;
+    gap: 0.5rem;
   }
 }
 
