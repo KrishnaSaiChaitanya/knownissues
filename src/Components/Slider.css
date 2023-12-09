@@ -38,6 +38,12 @@ img {
     linear-gradient(0deg, black, black) 50% 100% / 100% 1.25rem no-repeat; */
 }
 
+@media (max-width: 768px) {
+  .track {
+    height: clamp(300px, 40vmin, 65rem) !important;
+  }
+}
+
 .track__item {
   height: 100%;
   border-radius: 25px;
