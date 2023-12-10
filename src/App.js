@@ -33,10 +33,10 @@ function App() {
       {/* <NewComponent /> */}
       {/* <SectionComponent /> */}
       {/* <BonusContent /> */}
-      <Slider />
+      {/* <Slider /> */}
       {/* <Special /> */}
       {/* <FeatureSection /> */}
-      {/* <NewBonus /> */}
+      <NewBonus />
       {/* <FeaturesSection /> */}
       {/* <Home /> */}
     </div>

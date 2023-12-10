@@ -1,9 +1,59 @@
 import React from "react";
 import "./NewBonus.css";
+import { useEffect } from "react";
 function NewBonus() {
+  useEffect(() => {
+    function handleScroll() {
+      const elements = document.querySelectorAll(".animation .anm_mod");
+      const windowHeight = window.innerHeight;
+
+      elements.forEach(function (element) {
+        const position = element.getBoundingClientRect().top;
+        const scroll = window.scrollY || window.pageYOffset;
+
+        if (scroll > position - windowHeight) {
+          element.classList.add("active");
+        }
+        if (scroll < 150) {
+          element.classList.remove("active");
+        }
+      });
+    }
+
+    // function smoothScroll(event) {
+    //   event.preventDefault();
+
+    //   const href = event.target.getAttribute("href");
+    //   const target =
+    //     href === "#" || href === ""
+    //       ? document.documentElement
+    //       : document.querySelector(href);
+    //   const offsetTop = target.getBoundingClientRect().top + window.pageYOffset;
+    //   const duration = 800;
+    //   const startTime = performance.now();
+
+    //   function scroll(time) {
+    //     const currentTime = time - startTime;
+    //     const progress = Math.min(currentTime / duration, 1);
+    //     window.scrollTo(0, offsetTop * progress);
+
+    //     if (currentTime < duration) {
+    //       requestAnimationFrame(scroll);
+    //     }
+    //   }
+
+    //   requestAnimationFrame(scroll);
+    // }
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <div>
-      <div className="New_bonus_main">
+      {/* <div className="New_bonus_main">
         <div className="" id="left_content">
           <div className="" id="inside">
             <h1 id="heading_text_left">
@@ -80,6 +130,45 @@ function NewBonus() {
             </p>
           </div>
         </div>
+      </div> */}
+
+      <div class="animation" style={{ marginTop: "20%" }}>
+        <div class="anm_mod full">Hero Page</div>
+      </div>
+
+      <div class="animation">
+        <div
+          className="anm_mod left fast"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            backgroundColor: "white",
+          }}
+        >
+          <div class="anm_mod left fast" style={{ width: "90%" }}>
+            {" "}
+            Div - 1
+          </div>
+          <div class="anm_mod left delay" style={{ width: "90%" }}>
+            {" "}
+            Div - 2
+          </div>
+        </div>
+        <div class="anm_mod right delay">Features Section</div>
+      </div>
+      {/* <div class="animation" style={{ marginTop: "20%" }}>
+        <div class="anm_mod full">Hero Page</div>
+      </div> */}
+      <div class="animation">
+        <div class="anm_mod full delay">Immersive Mini-Courses</div>
+      </div>
+      <div class="animation">
+        <div class="anm_mod left delay">Bonus Content left</div>
+        <div class="anm_mod right delay">Bonus Content right</div>
+      </div>
+
+      <div class="animation">
+        <div class="anm_mod full delay">Slider section</div>
       </div>
     </div>
   );

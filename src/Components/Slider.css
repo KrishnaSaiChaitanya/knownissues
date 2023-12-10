@@ -9,14 +9,14 @@
     linear-gradient(0deg, black, black) 50% 100% / 100% 1.25rem no-repeat; */
 }
 
-img {
+.track-item-image {
   height: 100%;
   width: 100%;
   border-radius: 25px;
 }
 
 .track {
-  --size: clamp(600px, 40vmin, 1165rem);
+  --size: clamp(700px, 40vmin, 1165rem);
   height: var(--size);
   width: 100%;
   display: flex;
