@@ -14,7 +14,7 @@ function NewBonus() {
         if (scroll > position - windowHeight) {
           element.classList.add("active");
         }
-        if (scroll < 150) {
+        if (scroll < 300) {
           element.classList.remove("active");
         }
       });
@@ -131,9 +131,21 @@ function NewBonus() {
           </div>
         </div>
       </div> */}
-
-      <div class="animation" style={{ marginTop: "20%" }}>
-        <div class="anm_mod full">Hero Page</div>
+      <div class="animation">
+        <div
+          class="fade-in"
+          style={{
+            backgroundColor: "rgba(144, 140, 140, 0.5)",
+            width: "90%",
+            height: "600PX",
+            transition: "all 0.9s ease",
+          }}
+        >
+          HERO page
+        </div>
+      </div>
+      <div class="animation">
+        <div class="anm_mod full">LIFETIME ACCESS</div>
       </div>
 
       <div class="animation">
@@ -156,9 +168,6 @@ function NewBonus() {
         </div>
         <div class="anm_mod right delay">Features Section</div>
       </div>
-      {/* <div class="animation" style={{ marginTop: "20%" }}>
-        <div class="anm_mod full">Hero Page</div>
-      </div> */}
       <div class="animation">
         <div class="anm_mod full delay">Immersive Mini-Courses</div>
       </div>
@@ -169,6 +178,9 @@ function NewBonus() {
 
       <div class="animation">
         <div class="anm_mod full delay">Slider section</div>
+      </div>
+      <div class="animation">
+        <div class="anm_mod full delay-2">Bottom Compoenent</div>
       </div>
     </div>
   );
