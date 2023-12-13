@@ -8,10 +8,12 @@ import Features from "./Components/Features";
 import FeaturesSection from "./Components/featuresSection";
 import SectionComponent from "./Components/TakeControl";
 import BonusContent from "./Components/BonusContent";
-import NewBonus from "./Components/NewBonus";
+
 import Slider from "./Components/Slider";
 import Special from "./Components/Special";
 import FeatureSection from "./Components/FeatureSection";
+import NewBonus from "./Components/FadeInAnimation";
+import NewFadeIn from "./Components/NewFadeIn";
 
 function App() {
   const texts = [
@@ -37,6 +39,7 @@ function App() {
       {/* <Special /> */}
       {/* <FeatureSection /> */}
       <NewBonus />
+      {/* <NewFadeIn /> */}
       {/* <FeaturesSection /> */}
       {/* <Home /> */}
     </div>
