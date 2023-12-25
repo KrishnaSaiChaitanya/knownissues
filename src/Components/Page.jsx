@@ -47,7 +47,7 @@ export default function Home() {
           content="Create a happier, healthier, more fulfilling life"
         />
       </div>
-      <div
+      {/* <div
         className=""
         style={{
           backgroundColor: "linear-gradient(400deg, #520e63, #651279, #b221d2)",
@@ -281,11 +281,13 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* <Header2 /> */}
       <main>
         <div className="activities_component">
-          <div className="fade_in_div4">{/* <Activities /> */}</div>
+          <div className="fade_in_div4">
+            <Activities />
+          </div>
         </div>
 
         <NotebookComponent />

@@ -33,8 +33,8 @@ function CoursesComponent() {
             </div>
           </div>
         </div>
-        <div className="courses_component">
-          <div className="grid md:grid-cols-2 sm:grid-cols-1 md:m-4 sm:m-0 py-5 overflow-hidden">
+        <div className="animation courses_component">
+          <div className="anm_mod zoomIn delay grid md:grid-cols-2 sm:grid-cols-1 md:m-4 sm:m-0 py-5 overflow-hidden">
             <div className="col-6">
               <div className="carousel">
                 <ul className="slides">

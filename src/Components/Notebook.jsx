@@ -34,21 +34,17 @@ const NotebookComponent = () => {
   return (
     <div className="notebook_container">
       <div className="heading_div p-5 text-center m-auto relative">
-        <div className="animation">
-          <div className="anm_mod full ">
-            <h1
-              className="text-[#1A1D1A] relative"
-              style={{
-                background:
-                  "linear-gradient(400deg, #520e63, #651279, #b221d2)",
-                WebkitBackgroundClip: "text", // For Safari
-                color: "transparent",
-              }}
-            >
-              <strong>Secure, Private </strong> Journaling
-            </h1>
-          </div>
-        </div>
+        <h1
+          className="fade-in text-[#1A1D1A] relative"
+          style={{
+            background: "linear-gradient(400deg, #520e63, #651279, #b221d2)",
+            WebkitBackgroundClip: "text", // For Safari
+            color: "transparent",
+          }}
+        >
+          <strong>Secure, Private </strong> Journaling
+        </h1>
+
         <div className="animation">
           <div className="anm_mod zoomIn delay">
             <div
