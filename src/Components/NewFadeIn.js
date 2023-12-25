@@ -1,7 +1,30 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./NewFadeIn.css";
 
 function NewFadeIn() {
+  useEffect(() => {
+    function show() {
+      var reveal = document.querySelectorAll(".box");
+
+      for (var i = 0; i < reveal.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveal[i].getBoundingClientRect().top;
+        var e = 140;
+
+        if (elementTop < windowHeight - e) {
+          reveal[i].classList.add("active");
+        } else {
+          reveal[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", show);
+
+    return () => {
+      window.addEventListener("scroll", show);
+    };
+  }, []);
   return (
     <div>
       <section>
@@ -24,15 +47,15 @@ function NewFadeIn() {
             </div>
 
             <div className="col-6">
-              <div className=" animate fadeIn five">Fade in</div>
+              <div className="box animate fadeIn five">Fade in</div>
             </div>
 
             <div className="col-6">
-              <div className=" animate fadeInUpBig six">Fade in Up Big</div>
+              <div className="box animate fadeInUpBig six">Fade in Up Big</div>
             </div>
 
             <div className="col-6">
-              <div className=" animate fadeInDownBig seven">
+              <div className="box animate fadeInDownBig seven">
                 Fade in Down Big
               </div>
             </div>

@@ -73,7 +73,7 @@ function NewBonus() {
       <div className="animation">
         <div className="anm_mod full delay">Slider section</div>
       </div>
-      {/* use "full" in className for animating complete div */}
+
       <div className="animation">
         <div className="anm_mod full delay-2">Bottom Compoenent</div>
       </div>

@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import TextSlider from "./Components/TextSlider";
-import Home from "./Components/Home";
+
 import BackgrounAnimation from "./Components/BackgrounAnimation";
 import Features from "./Components/Features";
 
@@ -14,6 +14,9 @@ import Special from "./Components/Special";
 import FeatureSection from "./Components/FeatureSection";
 import NewBonus from "./Components/FadeInAnimation";
 import NewFadeIn from "./Components/NewFadeIn";
+import FadeInLeftOnScroll from "./Components/SingleComponentFadeIn";
+import Test from "./Components/Test";
+import Home from "./Components/Page";
 
 function App() {
   const texts = [
@@ -38,7 +41,10 @@ function App() {
       {/* <Slider /> */}
       {/* <Special /> */}
       {/* <FeatureSection /> */}
-      <NewBonus />
+      {/* <NewBonus /> */}
+      {/* <FadeInLeftOnScroll /> */}
+      {/* <Test /> */}
+      <Home />
       {/* <NewFadeIn /> */}
       {/* <FeaturesSection /> */}
       {/* <Home /> */}
