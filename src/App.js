@@ -1,7 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import TextSlider from "./Components/TextSlider";
-
+import "./Components/Animation.css";
 import BackgrounAnimation from "./Components/BackgrounAnimation";
 import Features from "./Components/Features";
 
@@ -17,6 +17,9 @@ import NewFadeIn from "./Components/NewFadeIn";
 import FadeInLeftOnScroll from "./Components/SingleComponentFadeIn";
 import Test from "./Components/Test";
 import Home from "./Components/Page";
+import Pricing from "./Components/Pricing";
+import LifetimeSubscriptions2023 from "./Components/Pricing";
+import Landing1MemberPrototype from "./Components/Landing1MemberPrototype";
 
 function App() {
   const texts = [
@@ -44,7 +47,9 @@ function App() {
       {/* <NewBonus /> */}
       {/* <FadeInLeftOnScroll /> */}
       {/* <Test /> */}
-      <Home />
+      {/* <Home />
+      <LifetimeSubscriptions2023 /> */}
+      <Landing1MemberPrototype />
       {/* <NewFadeIn /> */}
       {/* <FeaturesSection /> */}
       {/* <Home /> */}

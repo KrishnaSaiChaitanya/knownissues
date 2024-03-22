@@ -27,30 +27,6 @@ const HeroNextArrow = (props) => (
 );
 
 function Activities() {
-  useEffect(() => {
-    function show() {
-      var reveal = document.querySelectorAll(".animation .anm_mod");
-
-      for (var i = 0; i < reveal.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveal[i].getBoundingClientRect().top;
-        var e = 140;
-
-        if (elementTop < windowHeight - e) {
-          reveal[i].classList.add("active");
-        } else {
-          reveal[i].classList.remove("active");
-        }
-      }
-    }
-
-    window.addEventListener("scroll", show);
-
-    return () => {
-      window.addEventListener("scroll", show);
-    };
-  }, []);
-
   var settings = {
     dots: false,
     infinite: true,
@@ -64,7 +40,7 @@ function Activities() {
   return (
     <div className="activities_component">
       <div className="overflow-hidden bg-gradient-to-r from-[#F4EDFF] via-[#F4EEFE] to-[#F4EDFF] shadow-xl pt-10 pb-10 p-[44px] md:pl-0 md:pr-0 components_animation fade_in_div4">
-        <div className="animation heading_div p-2 text-center m-auto">
+        <div className="animation_container heading_div p-2 text-center m-auto">
           <h1 className="anm_mod full delay !text-[#1A1D1A]">
             Four <strong>Empowering Phrase</strong> Games
           </h1>

@@ -5,32 +5,8 @@ import DailyDairyExpress from "./help/DailydiaryExpress.jpeg";
 import NudgesPreview from "./help/NudgesPreview.jpeg";
 import NeverEndingNotebookPromptPreview from "./help/NeverEndingNotebookPromptPreview.jpeg";
 import DailydiaryEntries from "./help/DailydiaryEntries.jpeg";
-import "./FadeInAnimation.css";
 
 const NotebookComponent = () => {
-  useEffect(() => {
-    function show() {
-      var reveal = document.querySelectorAll(".animation .anm_mod");
-
-      for (var i = 0; i < reveal.length; i++) {
-        var windowHeight = window.innerHeight;
-        var elementTop = reveal[i].getBoundingClientRect().top;
-        var e = 140;
-
-        if (elementTop < windowHeight - e) {
-          reveal[i].classList.add("active");
-        } else {
-          reveal[i].classList.remove("active");
-        }
-      }
-    }
-
-    window.addEventListener("scroll", show);
-
-    return () => {
-      window.addEventListener("scroll", show);
-    };
-  }, []);
   return (
     <div className="notebook_container">
       <div className="heading_div p-5 text-center m-auto relative">
@@ -45,7 +21,7 @@ const NotebookComponent = () => {
           <strong>Secure, Private </strong> Journaling
         </h1>
 
-        <div className="animation">
+        <div className="animation_container">
           <div className="anm_mod zoomIn delay">
             <div
               className="sub_text max-w-[700px] m-auto text-[#1A1D1A] text-lg relative"
@@ -67,7 +43,7 @@ const NotebookComponent = () => {
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 md:p-[11px] max-w-full relative components_animation animate_left delayed2">
         <div
-          className="animation bg-[#efdbf6] p-8 min-h-[440px] shadow-xl order-1 md:order-2"
+          className="animation_container bg-[#efdbf6] p-8 min-h-[440px] shadow-xl order-1 md:order-2"
           style={{
             background: "linear-gradient(40deg, #E9D9FF, #FDFDFD, #F8F3FF)",
           }}
@@ -98,7 +74,7 @@ const NotebookComponent = () => {
             </div>
           </div>
         </div>
-        <div className="animation p-8 min-h-[440px] order-2 md:order-1 components_animation animate_right delayed2">
+        <div className="animation_container p-8 min-h-[440px] order-2 md:order-1 components_animation animate_right delayed2">
           <h3
             className="anm_mod left text-[#1A1D1A] text-2xl text-center font-bold pb-2 "
             style={{
@@ -126,7 +102,7 @@ const NotebookComponent = () => {
           </div>
         </div>
         <div
-          className="animation  bg-[#efdbf6] p-8 min-h-[440px] shadow order-3 md:order-3 relative components_animation animate_right delayed2"
+          className="animation_container  bg-[#efdbf6] p-8 min-h-[440px] shadow order-3 md:order-3 relative components_animation animate_right delayed2"
           style={{
             background: "linear-gradient(220deg, #E3EEFC ,#FDFDFD, #F5F9FE)",
           }}
@@ -156,7 +132,7 @@ const NotebookComponent = () => {
             </div>
           </div>
         </div>
-        <div className="animation delay p-8 min-h-[440px]  order-4 md:order-4 components_animation animate_left delayed2">
+        <div className="animation_container delay p-8 min-h-[440px]  order-4 md:order-4 components_animation animate_left delayed2">
           <h3
             className="anm_mod right delay text-[#1A1D1A] text-2xl text-center font-bold pb-2"
             style={{

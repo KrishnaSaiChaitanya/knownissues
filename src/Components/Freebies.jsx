@@ -13,7 +13,7 @@ export function Freebies() {
       className="relative overflow-hidden py-8 sm:py-8 max-w-screen"
     >
       <div className="heading_div p-5 text-center m-auto">
-        <div className="animation">
+        <div className="animation_container">
           <div className="anm_mod zoomIn">
             <h1 className="text-[#651279]">
               <strong>Bonus </strong> Content
@@ -28,7 +28,7 @@ export function Freebies() {
       <div className="relative flex flex-col items-center font-[Plus Jakarta Sans]">
         <div className="flex flex-col md:flex-row max-w-[1400px] p-8 gap-10">
           <div className="mx-auto sm:w-1/2 sm:text-center courses_outer px-8 py-8 rounded-2xl shadow-xl ring-1 ring-gray-900/10 relative">
-            <div className="animation">
+            <div className="animation_container">
               <div className="anm_mod left">
                 <h3
                   className={`${h3Class} text-left text-[#F1F1F1] mb-0 pb-0 pt-4`}
@@ -46,7 +46,7 @@ export function Freebies() {
             </p>
 
             <div className="preview_thumbnail pt-8 pb-8">
-              <div className="animation">
+              <div className="animation_container">
                 <div className="anm_mod zoomIn delay">
                   <img
                     className="rounded-2xl"
@@ -68,7 +68,7 @@ export function Freebies() {
             </h4>
           </div>
           <div className="mx-auto sm:w-1/2 sm:text-center text-[#54005C] px-8 py-8 border-[#54005C] border rounded-2xl shadow-xl ring-1 ring-gray-900/10 relative">
-            <div className="animation">
+            <div className="animation_container">
               <div className="anm_mod left">
                 <h3
                   className={`${h3Class} text-left text-[#54005C] mb-0 pb-0 pt-4`}
@@ -97,7 +97,7 @@ export function Freebies() {
               covering more than 100 unique destinations
             </p>
             <div className="preview_thumbnail pt-8 pb-8">
-              <div className="animation">
+              <div className="animation_container">
                 <div className="anm_mod zoomIn delay">
                   <img
                     className="rounded-2xl"

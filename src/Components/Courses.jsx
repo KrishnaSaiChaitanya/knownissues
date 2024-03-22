@@ -13,7 +13,7 @@ function CoursesComponent() {
     <>
       <div className="p-8 relative bg-gradient-to-r from-[#7FDEFF] via-[#e3eefc] to-[#7FDEFF] shadow-xl">
         <div className="heading_div p-5 text-center m-auto">
-          <div className="animation">
+          <div className="animation_container">
             <div className="anm_mod full">
               <h1 className="text-[#1A1D1A]">
                 <strong>Immersive</strong> Mini-Courses
@@ -22,7 +22,7 @@ function CoursesComponent() {
           </div>
 
           <div className="sub_text max-w-[700px] text-lg m-auto text-[#1A1D1A]">
-            <div className="animation">
+            <div className="animation_container">
               <div className="anm_mod zoomIn delay">
                 <span>
                   Learn life-changing concepts and practical skills to rocket
@@ -33,7 +33,7 @@ function CoursesComponent() {
             </div>
           </div>
         </div>
-        <div className="animation courses_component">
+        <div className="animation_container courses_component">
           <div className="anm_mod zoomIn delay grid md:grid-cols-2 sm:grid-cols-1 md:m-4 sm:m-0 py-5 overflow-hidden">
             <div className="col-6">
               <div className="carousel">
@@ -57,7 +57,7 @@ function CoursesComponent() {
               </div>
             </div>
             <div className="col-6 bg-[white] p-8" id="slider_side_content">
-              <div className="animation">
+              <div className="animation_container">
                 <div className="anm_mod left delay">
                   <h1 className="text-left px-2 pt-4 font-bold text-[#8e1aa8] text-3xl">
                     Education. Introspection.
@@ -96,7 +96,7 @@ function CoursesComponent() {
                   </p>
                 </div>
               </div>
-              <div className="animation">
+              <div className="animation_container">
                 <div className="anm_mod left delay">
                   {" "}
                   <h1 className="text-left px-2 pt-1 font-bold text-[#8e1aa8] text-3xl">
