@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../Components/Landing1MemberPrototype.css";
 const people = [
   {
@@ -49,6 +49,16 @@ const people = [
 export default function Landing1MemberPrototype() {
   const [hoveredCard, setHoveredCard] = useState(people[0].id);
   const [lastHoveredCard, setLastHoveredCard] = useState(people[0].id);
+  const [contentHeight, setContentHeight] = useState("1244px"); // State to manage content height
+
+  useEffect(() => {
+    // Calculate and set content height based on the active contentBox
+    const activeContentBox = document.querySelector(".contentBox.active");
+    if (activeContentBox) {
+      const height = activeContentBox.offsetHeight;
+      setContentHeight(height);
+    }
+  }, [hoveredCard]);
 
   const handleCardHover = (id) => {
     setHoveredCard(id);
@@ -71,6 +81,7 @@ export default function Landing1MemberPrototype() {
       className="py-12 sm:py-12"
       style={{
         background: "linear-gradient(400deg, #54005C, #520e63, #651279)",
+        height: "100%",
       }}
     >
       <div className="mx-auto max-w-7xl px-6 text-center lg:px-8 pb-4">
@@ -105,7 +116,10 @@ export default function Landing1MemberPrototype() {
               </div>
             ))}
           </div>
-          <div className="content">
+          <div
+            className="content"
+            style={{ height: contentHeight, margin: "auto" }}
+          >
             {people.map((person) => (
               <div
                 className={`contentBox ${
@@ -113,16 +127,10 @@ export default function Landing1MemberPrototype() {
                 }`}
                 key={`content${person.id}`}
               >
-                <div className="m-8 bio_content text-left">
-                  <p className="mt-4 text-lg leading-7 text-[#F1F1F1]">
-                    {person.bio1}
-                  </p>
-                  <p className="mt-4 text-lg leading-7 text-[#F1F1F1]">
-                    {person.bio2}
-                  </p>
-                  <p className="mt-4 text-lg leading-7 text-[#F1F1F1]">
-                    {person.bio3}
-                  </p>
+                <div className="sm:m-8 m-0 bio_content text-left text-lg leading-7">
+                  <p className=" text-[#F1F1F1]">{person.bio1}</p>
+                  <p className=" text-[#F1F1F1]">{person.bio2}</p>
+                  <p className=" text-[#F1F1F1]">{person.bio3}</p>
                 </div>
               </div>
             ))}
