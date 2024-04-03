@@ -115,7 +115,7 @@
 }
 
 .content .contentBox {
-  display: none; /* Hide all content boxes by default */
+  display: none;
   position: absolute;
   width: 100%;
   justify-content: center;
@@ -123,7 +123,7 @@
 }
 
 .content .contentBox.active {
-  display: flex; /* Show only active content box */
+  display: flex;
 }
 
 @media screen and (min-width: 61.25rem) {
