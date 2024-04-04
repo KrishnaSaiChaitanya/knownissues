@@ -134,7 +134,7 @@
 
 .content .contentBox.active {
   display: flex;
-  height: 1200px;
+  height: 700px;
   align-items: flex-start;
   margin-top: 20px;
 }
