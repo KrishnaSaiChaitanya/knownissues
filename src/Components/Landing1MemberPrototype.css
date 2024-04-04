@@ -26,12 +26,22 @@
   margin-top: 80px;
   grid-column: span 12;
   display: grid;
-  gap: 2rem;
+  gap: 2.5rem;
+  height: 100px;
 }
 
 @media screen and (min-width: 61.25rem) {
   .cards {
     grid-column: span 4;
+    height: 500px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .cards {
+    height: 560px !important;
+  }
+  .content .contentBox.active {
+    height: auto !important;
   }
 }
 
@@ -124,6 +134,9 @@
 
 .content .contentBox.active {
   display: flex;
+  height: 1200px;
+  align-items: flex-start;
+  margin-top: 20px;
 }
 
 @media screen and (min-width: 61.25rem) {

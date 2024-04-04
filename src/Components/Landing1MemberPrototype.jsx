@@ -49,10 +49,8 @@ const people = [
 export default function Landing1MemberPrototype() {
   const [hoveredCard, setHoveredCard] = useState(people[0].id);
   const [lastHoveredCard, setLastHoveredCard] = useState(people[0].id);
-  const [contentHeight, setContentHeight] = useState("1244px"); // State to manage content height
-
+  const [contentHeight, setContentHeight] = useState("1244px");
   useEffect(() => {
-    // Calculate and set content height based on the active contentBox
     const activeContentBox = document.querySelector(".contentBox.active");
     if (activeContentBox) {
       const height = activeContentBox.offsetHeight;
